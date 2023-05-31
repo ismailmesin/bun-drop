@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+*{
+  background-color: #777777;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 1fr 1fr;
+  align-items: center;
+  padding: 5px;
+  background-color: #3D3D3D;
+  /* color: #EF9665; */
+  color: darksalmon;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.menu-item {
+  background-color: #3d3d3d;
+  border-radius: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+.cart-buttons{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-button{ 
+  height: 50px;
+  width: 100px;
+  margin: 20px; 
+  align-items: center;
+  position:relative;
+  top:50%; 
+  left:50%;
+  border-radius: 10px;
+}
+
+.cart-input{
+  text-align: center;
+  width: 20px;
+}
+
+.logo{
+  justify-content: center;
+  max-width: 40px;
+  background-color: #3D3D3D;
+}
+
+.title{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.nav-title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  background-color: #3D3D3D;
+}
+
+.flex-item{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+  background-color: #3d3d3d;
+}
+
+a {
+  font-weight: bold;
+  margin-left: 60px;
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: #3D3D3D;
+}
+
+.btn-buy{
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+a:link, a:visited {
+  color: darksalmon;
+}
+
+a:hover {
+  color: salmon;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.dark-grey{
+  background-color: #3d3d3d;
+}
+
+.logo-orange{
+  color: darksalmon;
+}
+
+.light-grey{
+  background-color: #777777;
+}
+
+h3, em, p, h1, h2, b, img{
+  background-color: #3D3D3D;
 }
