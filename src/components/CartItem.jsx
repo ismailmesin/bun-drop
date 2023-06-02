@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function CartItem({name,price,id,img,amount}) {
 
@@ -34,25 +34,27 @@ function CartItem({name,price,id,img,amount}) {
     }
   };
 
-  useEffect(() => {
-    if (itemAmount <= 0) {
-      removeItem();
-    }
-  }, [itemAmount]);
+  // useEffect(() => {
+  //   if (itemAmount <= 0) {
+  //     removeItem();
+  //   }
+  // }, [itemAmount]);
 
-  const removeItem = async () => {
-    try {
-      await fetch(`your_json_server_url/items/${id}`, {
-        method: 'DELETE',
-      });
-    } catch (error) {
-      console.error('Error removing item:', error);
-    }
-  };
+  // const removeItem = async () => {
+  //   try {
+  //     await fetch(``, {
+  //       method: 'DELETE',
+  //     });
+  //   } catch (error) {
+  //     console.error('Error removing item:', error);
+  //   }
+  // };
 
   if (itemAmount <= 0) {
     return null; // Item with amount 0 or less is removed from the cart
   }
+
+  const totalAmount = Math.round(price * itemAmount);
 
   return (
     <div>
@@ -60,12 +62,12 @@ function CartItem({name,price,id,img,amount}) {
         <img src={img} alt={name} />
         <p><b>{name}</b></p>
         <p>${price}</p>
-        <p>Total Price: {price * itemAmount}</p>
+        <p>Total Price: ${totalAmount}</p>
         {/* <p>Amount: {itemAmount}</p> */}
         <div className='dark-grey'>
-          <button onClick={decreaseAmount}>-</button>
+          <button className='decrease-button' onClick={decreaseAmount}>-</button>
           <input className='cart-input' value={itemAmount} readOnly />
-          <button onClick={increaseAmount}>+</button>
+          <button className='increase-button' onClick={increaseAmount}>+</button>
         </div>
       </div>
     </div>

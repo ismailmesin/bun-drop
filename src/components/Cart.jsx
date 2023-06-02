@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import CartItem from './CartItem';
+import { Link } from 'react-router-dom';
 
 function Cart() {
 
@@ -38,8 +39,8 @@ function Cart() {
           ))}
       </div>
       <div className='cart-buttons'>
-        <button className='cart-button'>Continue Shopping</button>
-        <button className='cart-button'>Checkout</button>
+        <Link to='/Menu' className='light-grey'><button className='cart-button light-grey'>Continue Shopping</button></Link>
+        <Link to='/Checkout' className='light-grey'><button className='cart-button light-grey'>Checkout</button></Link>
       </div>
     </div>
   )
