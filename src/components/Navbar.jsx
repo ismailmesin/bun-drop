@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {ShoppingCart} from 'phosphor-react';
-import logo from '../images/logo.png'
+import logo from '../Logo/logo.png'
 
 
 function Navbar() {
