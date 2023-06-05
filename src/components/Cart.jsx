@@ -38,9 +38,9 @@ function Cart() {
             />
           ))}
       </div>
-      <div className='cart-buttons'>
-        <Link to='/Menu' className='light-grey'><button className='cart-button light-grey'>Continue Shopping</button></Link>
-        <Link to='/Checkout' className='light-grey'><button className='cart-button light-grey'>Checkout</button></Link>
+      <div className='flex-container'>
+        <Link to='/menu' className='light-grey'><button className='cart-button light-grey'>Continue Shopping</button></Link>
+        <Link to='/checkout' className='light-grey'><button className='cart-button light-grey'>Checkout</button></Link>
       </div>
     </div>
   )

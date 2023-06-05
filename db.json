@@ -2,49 +2,49 @@
   "items": [
     {
       "id": 1,
-      "img": "../src/images/burger-1.png",
+      "img": "/images/burger-1.png",
       "name": "Cheese Burger",
       "price": 10.99,
       "amount": 1
     },
     {
       "id": 2,
-      "img": "src/images/burger-2.png",
+      "img": "/images/burger-2.png",
       "name": "BBQ Bacon Burger",
       "price": 11.49,
-      "amount": 0
+      "amount": 1
     },
     {
       "id": 3,
-      "img": "src/images/burger-3.png",
+      "img": "/images/burger-3.png",
       "name": "Mushroom Swiss Burger",
       "price": 10.49,
       "amount": 0
     },
     {
       "id": 4,
-      "img": "src/images/burger-4.png",
+      "img": "/images/burger-4.png",
       "name": "Spicy Jalapeno Burger",
       "price": 10.99,
       "amount": 0
     },
     {
       "id": 5,
-      "img": "src/images/burger-5.png",
+      "img": "/images/burger-5.png",
       "name": "Veggie Burger",
       "price": 8.99,
       "amount": 0
     },
     {
       "id": 6,
-      "img": "src/images/fries-1.png",
+      "img": "/images/fries-1.png",
       "name": "French Fries",
       "price": 3.99,
-      "amount": 5
+      "amount": 0
     },
     {
       "id": 7,
-      "img": "src/images/milkshake-1.png",
+      "img": "/images/milkshake-1.png",
       "name": "Oreo Milkshake",
       "price": 3.99,
       "amount": 0

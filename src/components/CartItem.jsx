@@ -59,11 +59,10 @@ function CartItem({name,price,id,img,amount}) {
   return (
     <div>
       <div className='menu-item'>
-        <img src={img} alt={name} />
+        <img src={img} className='img-card' alt={name} />
         <p><b>{name}</b></p>
         <p>${price}</p>
         <p>Total Price: ${totalAmount}</p>
-        {/* <p>Amount: {itemAmount}</p> */}
         <div className='dark-grey'>
           <button className='decrease-button' onClick={decreaseAmount}>-</button>
           <input className='cart-input' value={itemAmount} readOnly />

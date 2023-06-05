@@ -1,10 +1,27 @@
-# Getting Started with Create React App
+## Bun-Drop
+This project is named Bun-Drop and and it is a react app with a json server created for a company that make Burgers on order then deliveres them to you with the help of drones.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app is built like a dynamic E-commerce app with a home-page, menu ,shopping-cart and payment details. In the app you can add and remove items from the shopping cart and then procceed to the payment methods.
+
+## Getting started
+to get this project up and running we first need to download some packages 
+
+### `npm install react-router-dom`
+this is the first package you will need to download, in the terminal you can just type the same command that i wrote.
+
+### `npm install phosphor-react`
+in this project i have used some icons from a package called phosphor so you will need to install that aswell.
+
+### scripts
+to get the app started we will need to run the first two scripts in the Available Scripts section
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run json-server`
+this script will set up the json server on the URL: (http://localhost:9000)
+you will need this as all of the data is on the json-server
 
 ### `npm start`
 
@@ -39,31 +56,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 

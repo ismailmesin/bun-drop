@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from 'react';
 
 function MenuItem({ name, price, id, img, amount }) {
-  const [product, setProduct] = useState(null);
-  const [currentAmount, setCurrentAmount] = useState(amount);
+
+    const [product, setProduct] = useState(null);
+    const [currentAmount, setCurrentAmount] = useState(amount);
 
   useEffect(() => {
     fetchProductData();
@@ -46,7 +47,7 @@ function MenuItem({ name, price, id, img, amount }) {
   return (
     <div>
       <div className='menu-item'>
-        <img src={img} alt='' />
+        <img src={img} className='img-card' alt='' />
         <p>
           <b>{name}</b>
         </p>

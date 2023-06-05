@@ -1,9 +1,11 @@
 import React from 'react';
 import { CreditCard } from 'phosphor-react'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function CardPayment() {
 
+    const navigate = useNavigate();
     const [cardNumber, setCardNumber] = useState('');
     const [expirationDate, setExpirationDate] = useState('');
     const [cvv, setCVV] = useState(''); 
@@ -12,12 +14,15 @@ function CardPayment() {
     const handlePayButtonClick = () => {
       if (!cardNumber || !expirationDate || !cvv) {
         setErrorMessage('Please fill in all the required fields.');
-      } else if (cardNumber.length !== 16) {
+      }
+       else if (cardNumber.length !== 16) {
         setErrorMessage('Please enter a valid 16-digit card number.');
-      } else if (cvv.length !== 3) {
+      } 
+      else if (cvv.length !== 3) {
         setErrorMessage('Please enter a valid 3-digit CVV.');
-      } else {
-
+      } 
+      else {
+        navigate('/confirmation')
       }
     };
   
