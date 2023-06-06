@@ -5,28 +5,28 @@
       "img": "/images/burger-1.png",
       "name": "Cheese Burger",
       "price": 10.99,
-      "amount": 1
+      "amount": 0
     },
     {
       "id": 2,
       "img": "/images/burger-2.png",
       "name": "BBQ Bacon Burger",
       "price": 11.49,
-      "amount": 1
+      "amount": 0
     },
     {
       "id": 3,
       "img": "/images/burger-3.png",
       "name": "Mushroom Swiss Burger",
       "price": 10.49,
-      "amount": 0
+      "amount": 1
     },
     {
       "id": 4,
       "img": "/images/burger-4.png",
       "name": "Spicy Jalapeno Burger",
       "price": 10.99,
-      "amount": 0
+      "amount": 1
     },
     {
       "id": 5,

@@ -34,24 +34,8 @@ function CartItem({name,price,id,img,amount}) {
     }
   };
 
-  // useEffect(() => {
-  //   if (itemAmount <= 0) {
-  //     removeItem();
-  //   }
-  // }, [itemAmount]);
-
-  // const removeItem = async () => {
-  //   try {
-  //     await fetch(``, {
-  //       method: 'DELETE',
-  //     });
-  //   } catch (error) {
-  //     console.error('Error removing item:', error);
-  //   }
-  // };
-
   if (itemAmount <= 0) {
-    return null; // Item with amount 0 or less is removed from the cart
+    return null; 
   }
 
   const totalAmount = Math.round(price * itemAmount);

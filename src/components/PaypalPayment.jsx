@@ -33,6 +33,7 @@ function PaypalPayment() {
             <input
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
+                maxLength={10}
             />
             <button className='btn-buy' onClick={validateUserInput}>PAY</button>
         </div>
