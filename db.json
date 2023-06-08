@@ -19,14 +19,14 @@
       "img": "/images/burger-3.png",
       "name": "Mushroom Swiss Burger",
       "price": 10.49,
-      "amount": 1
+      "amount": 0
     },
     {
       "id": 4,
       "img": "/images/burger-4.png",
       "name": "Spicy Jalapeno Burger",
       "price": 10.99,
-      "amount": 1
+      "amount": 0
     },
     {
       "id": 5,
